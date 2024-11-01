@@ -1,10 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Input } from "./ui/input";
-import { useRouter } from "next/navigation";
 
 export default function Notes() {
-	const [notes, setNotes]: any = useState([]);
+	const [notes, setNotes] = useState<{ name: string; content: string }[]>([]);
 	const [name, setName] = useState("");
 	const [note, setNote] = useState("");
 
@@ -31,7 +30,7 @@ export default function Notes() {
 
 		if (response.ok) {
 			const newNote = { name, content: note };
-			setNotes((prevNotes: any) => [...prevNotes, newNote]);
+			setNotes((prevNotes) => [...prevNotes, newNote]);
 			setName("");
 			setNote("");
 		} else {
@@ -68,7 +67,7 @@ export default function Notes() {
 			</div>
 
 			<div className="grid grid-cols-4 gap-6 w-[80%] mx-auto mt-12">
-				{notes.map((n: any, index: any) => {
+				{notes.map((n: any, index: number) => {
 					console.log(n);
 
 					return (
