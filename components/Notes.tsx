@@ -67,7 +67,7 @@ export default function Notes() {
 			</div>
 
 			<div className="grid grid-cols-4 gap-6 w-[80%] mx-auto mt-12">
-				{notes.map((n: any, index: number) => {
+				{notes.map((n, index: number) => {
 					console.log(n);
 
 					return (
