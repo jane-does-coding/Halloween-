@@ -14,36 +14,35 @@ export function FloatingDockComponent() {
 			icon: (
 				<RiGhostLine className="h-full w-full text-neutral-500 dark:text-neutral-300" />
 			),
-			href: "#",
+			href: "/",
 		},
-
 		{
 			title: "History",
 			icon: (
 				<BiBone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
 			),
-			href: "#",
+			href: "#history",
 		},
 		{
 			title: "Pumpkins",
 			icon: (
 				<GiPumpkin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
 			),
-			href: "#",
+			href: "#pumpkins",
 		},
 		{
 			title: "Candy",
 			icon: (
 				<LuCandy className="h-full w-full text-neutral-500 dark:text-neutral-300" />
 			),
-			href: "#",
+			href: "#candy",
 		},
 		{
 			title: "My GitHub",
 			icon: (
 				<IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
 			),
-			href: "#",
+			href: "https://github.com/jane-does-coding",
 		},
 	];
 	return (

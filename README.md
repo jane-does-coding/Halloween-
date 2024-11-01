@@ -1,59 +1,36 @@
-# Halloween History
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Explore how Halloween started
+## Getting Started
 
-## Screenshots
-
-## Color Reference
-
-| Color         | Hex                                                              |
-| ------------- | ---------------------------------------------------------------- |
-| Dark Red      | ![#990100](https://via.placeholder.com/10/990100?text=+) #990100 |
-| Secondary Red | ![#e5383b](https://via.placeholder.com/10/e5383b?text=+) #e5383b |
-| Dark Grey     | ![#333333](https://via.placeholder.com/10/333333?text=+) #333333 |
-| Light         | ![#ebe5e5](https://via.placeholder.com/10/ebe5e5?text=+) #ebe5e5 |
-
-## Tech Stack
-
-[![Technologies](https://skillicons.dev/icons?i=ts,tailwind,nextjs,react,git,github)](https://skillicons.dev)
-
-## Functionality
-
-- History
-- Pumpkin Lights
-- Candy
-
-## Installation
-
-Install my-project with npm
+First, run the development server:
 
 ```bash
-  npm install my-project
-  cd my-project
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Run Locally
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Clone the project
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-```bash
-  git clone https://github.com/jane-does-coding/Flowtime
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Go to the project directory
+## Learn More
 
-```bash
-  cd my-project
-```
+To learn more about Next.js, take a look at the following resources:
 
-Install dependencies
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-```bash
-  npm install
-```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Start the server
+## Deploy on Vercel
 
-```bash
-  npm run start
-```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

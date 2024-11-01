@@ -10,31 +10,33 @@ export function LensComponent() {
 
 	return (
 		<div>
-			<div className="w-full relative rounded-3xl overflow-hidden max-w-md mx-auto bg-gradient-to-r from-[#1D2235] to-[#121318] p-8 my-10 mb-0">
-				<Rays />
-				<Beams />
-				<div className="relative z-10">
-					<Lens hovering={hovering} setHovering={setHovering}>
-						<Image
-							src="/one.jpg"
-							alt="image"
-							width={500}
-							height={500}
-							className="rounded-2xl"
-						/>
-					</Lens>
+			<div className="relative rounded-3xl overflow-hidden w-[80%] mx-auto p-2 my-8 mb-0">
+				<div className="relative flex flex-row-reverse">
+					<div className="flex-[4]">
+						<Lens hovering={hovering} setHovering={setHovering}>
+							<Image
+								src="/one.jpg"
+								alt="image"
+								width={500}
+								height={500}
+								className="rounded-2xl w-full h-[50vh] pl-12 "
+							/>
+						</Lens>
+					</div>
 					<motion.div
 						animate={{
 							filter: hovering ? "blur(2px)" : "blur(0px)",
 						}}
-						className="py-4 relative z-20"
+						className="py-4 relative z-20 flex flex-col items-start justify-center flex-[3]"
 					>
-						<h2 className="text-white text-2xl text-left font-bold">
-							Apple Vision Pro
+						<h2 className="text-white text-[3rem] creepster text-left font-bold">
+							Halloween over time
 						</h2>
-						<p className="text-neutral-200 text-left  mt-4">
-							The all new apple vision pro was the best thing that happened
-							around 8 months ago, not anymore.
+						<p className="text-neutral-200 text-left mt-4">
+							Halloween started over 2,000 years ago with the Celts' festival of
+							Samhain and evolved as Christian traditions blended in. In
+							America, it became the fun, spooky holiday we know today, full of
+							costumes, treats, and community celebrations.
 						</p>
 					</motion.div>
 				</div>
